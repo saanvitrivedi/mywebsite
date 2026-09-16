@@ -7,6 +7,26 @@
 
   <title>Saanvi Trivedi — Resume</title>
 
+  <!-- Print styles for the resume download button -->
+  <style>
+    @media print {
+      .site-nav,
+      .site-footer,
+      .button {
+        display: none;
+      }
+
+      body {
+        background: white;
+      }
+
+      main {
+        max-width: none;
+        padding: 0;
+      }
+    }
+  </style>
+
   <!-- Bootstrap stylesheet -->
   <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -20,13 +40,20 @@
 
   <header class="site-header text-center">
     <p class="site-name">Saanvi Trivedi</p>
+
     <h1>Saanvi's Resume</h1>
+
+    <button
+      class="button"
+      type="button"
+      onclick="window.print()">
+      Download Resume PDF
+    </button>
   </header>
 
 
   <!-- Bootstrap Navbar component -->
   <nav class="navbar navbar-expand-md site-nav" aria-label="Primary">
-
     <div class="container">
 
       <ul class="navbar-nav mx-auto">
@@ -44,7 +71,10 @@
         </li>
 
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="resume.html">
+          <a
+            class="nav-link active"
+            aria-current="page"
+            href="resume.html">
             Resume
           </a>
         </li>
@@ -59,13 +89,12 @@
 
     <!-- Bootstrap container centers the resume and provides
          responsive spacing. -->
-
     <div class="container">
 
-      <!-- Bootstrap utility class: mb-4 adds responsive
-           bottom margin after the section heading. -->
-
-      <section class="resume-block mb-4" aria-labelledby="education-heading">
+      <!-- Bootstrap utility class: mb-4 adds bottom margin. -->
+      <section
+        class="resume-block mb-4"
+        aria-labelledby="education-heading">
 
         <h2 id="education-heading">Education</h2>
 
@@ -104,21 +133,26 @@
 
           </div>
 
-          <p>GPA: 4.05 weighted / 3.74 unweighted</p>
-
           <p>
-            Relevant courses: AP Computer Science, AP Calculus BC, Integrated
-            Marketing Communications, AP French Language, Physics I
+            GPA: 4.05 weighted / 3.74 unweighted
           </p>
 
           <p>
-            Clubs: Machine Learning &amp; Data Science (Vice President), DECA
-            (Advisory Team), French Honors Society (JO), Tutors Club (Voluntary)
+            Relevant courses: AP Computer Science, AP Calculus BC,
+            Integrated Marketing Communications, AP French Language,
+            Physics I
           </p>
 
           <p>
-            Awards: AP Scholar with Distinction, National Scholastic Regional
-            Writing Award, DECA 2nd place regionally for Business Administration
+            Clubs: Machine Learning &amp; Data Science (Vice President),
+            DECA (Advisory Team), French Honors Society (JO),
+            Tutors Club (Voluntary)
+          </p>
+
+          <p>
+            Awards: AP Scholar with Distinction, National Scholastic
+            Regional Writing Award, DECA 2nd place regionally for
+            Business Administration
           </p>
 
         </div>
@@ -129,7 +163,9 @@
       <hr class="divider">
 
 
-      <section class="resume-block" aria-labelledby="experience-heading">
+      <section
+        class="resume-block"
+        aria-labelledby="experience-heading">
 
         <h2 id="experience-heading">Professional Experience</h2>
 
@@ -146,20 +182,24 @@
           </div>
 
           <ul>
+
             <li>
-              Worked with a nonprofit San Francisco start-up providing 911 access
-              to immigrants, deaf people, and others in underserved areas
+              Worked with a nonprofit San Francisco start-up providing
+              911 access to immigrants, deaf people, and others in
+              underserved areas
             </li>
 
             <li>
-              Gained national recognition, with articles about the company and
-              my posts published in NBC
+              Gained national recognition, with articles about the
+              company and my posts published in NBC
             </li>
 
             <li>
-              Guided other interns in writing articles, creating social media
-              posts, organizing event publicity, and bringing in donations
+              Guided other interns in writing articles, creating social
+              media posts, organizing event publicity, and bringing in
+              donations
             </li>
+
           </ul>
 
         </div>
@@ -178,15 +218,19 @@
           </div>
 
           <ul>
+
             <li>
-              Developed platform features for user accessibility, improving
-              lesson setup for teachers alongside the lead tech designer
+              Developed platform features for user accessibility,
+              improving lesson setup for teachers alongside the lead
+              tech designer
             </li>
 
             <li>
-              Worked with the computer science team to identify and troubleshoot
-              bugs, improving system performance and reliability
+              Worked with the computer science team to identify and
+              troubleshoot bugs, improving system performance and
+              reliability
             </li>
+
           </ul>
 
         </div>
@@ -197,7 +241,9 @@
       <hr class="divider">
 
 
-      <section class="resume-block" aria-labelledby="volunteer-heading">
+      <section
+        class="resume-block"
+        aria-labelledby="volunteer-heading">
 
         <h2 id="volunteer-heading">Volunteer Work</h2>
 
@@ -214,18 +260,21 @@
           </div>
 
           <ul>
+
             <li>
               Tutored high-need students struggling with math and English
             </li>
 
             <li>
-              Helped three students from underprivileged backgrounds meet
-              California standards and advance to the next grade
+              Helped three students from underprivileged backgrounds
+              meet California standards and advance to the next grade
             </li>
 
             <li>
-              Received accolades from parents and school staff for tutoring performance
+              Received accolades from parents and school staff for
+              tutoring performance
             </li>
+
           </ul>
 
         </div>
@@ -236,16 +285,21 @@
       <hr class="divider">
 
 
-      <section class="resume-block" aria-labelledby="extracurricular-heading">
+      <section
+        class="resume-block"
+        aria-labelledby="extracurricular-heading">
 
-        <h2 id="extracurricular-heading">Extracurricular Activities</h2>
+        <h2 id="extracurricular-heading">
+          Extracurricular Activities
+        </h2>
 
         <div class="resume-entry">
 
           <div class="resume-entry-head">
 
             <h3>
-              Machine Learning and Data Science Club — Foothill High School
+              Machine Learning and Data Science Club —
+              Foothill High School
             </h3>
 
             <span class="resume-entry-meta">
@@ -255,18 +309,22 @@
           </div>
 
           <ul>
+
             <li>
-              Organized meetings and workshops on machine learning and data science
+              Organized meetings and workshops on machine learning
+              and data science
             </li>
 
             <li>
-              Participated in hackathons applying AI to real-life problems
+              Participated in hackathons applying AI to real-life
+              problems
             </li>
 
             <li>
-              Hosted conferences with college students from similar organizations
-              and outside experts
+              Hosted conferences with college students from similar
+              organizations and outside experts
             </li>
+
           </ul>
 
         </div>
@@ -287,20 +345,23 @@
           </div>
 
           <ul>
+
             <li>
-              Analyzed and ranked recruitment data for 100+ potential new members,
-              supporting data-driven decisions
+              Analyzed and ranked recruitment data for 100+ potential
+              new members, supporting data-driven decisions
             </li>
 
             <li>
-              Designed and maintained structured evaluation systems assessing
-              candidates across quantitative and qualitative criteria
+              Designed and maintained structured evaluation systems
+              assessing candidates across quantitative and qualitative
+              criteria
             </li>
 
             <li>
-              Scaled analytics processes to 1,000+ candidates for Fall 2026
-              recruitment and managed data and rankings
+              Scaled analytics processes to 1,000+ candidates for
+              Fall 2026 recruitment and managed data and rankings
             </li>
+
           </ul>
 
         </div>
@@ -311,24 +372,29 @@
       <hr class="divider">
 
 
-      <section class="resume-block" aria-labelledby="skills-heading">
+      <section
+        class="resume-block"
+        aria-labelledby="skills-heading">
 
         <h2 id="skills-heading">Skills &amp; Interests</h2>
 
         <ul class="skills-list">
 
           <li>
-            <strong>Writing:</strong> Creative writing — currently working on a
-            novel as a side project, plus writing for school publications
+            <strong>Writing:</strong>
+            Creative writing — currently working on a novel as a side
+            project, plus writing for school publications
           </li>
 
           <li>
-            <strong>Coding:</strong> Proficient in C++, Java, Python, and more
+            <strong>Coding:</strong>
+            Proficient in C++, Java, Python, and more
           </li>
 
           <li>
-            <strong>Leadership:</strong> Led teams in past internships, the IT team
-            during sorority recruitment, and coordinated events for DECA and other clubs.
+            <strong>Leadership:</strong>
+            Led teams in past internships, the IT team during sorority
+            recruitment, and coordinated events for DECA and other clubs.
           </li>
 
         </ul>
