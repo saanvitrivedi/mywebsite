@@ -1,0 +1,375 @@
+/* ============================================================
+   Saanvi Trivedi — Personal Site
+
+   Palette: white ground, deep plum headings, dusty-rose accent
+   Type: Cormorant Garamond + Source Sans 3
+   ============================================================ */
+
+
+/* Custom typography */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Source+Sans+3:wght@400;500;600&display=swap');
+
+
+:root {
+  --white: #ffffff;
+  --cream: #fdf9fb;
+  --plum: #3f1f3d;
+  --plum-soft: #6b3f66;
+  --violet: #7a4a8f;
+  --rose: #c06a8c;
+  --rose-light: #f3dde7;
+  --rose-pale: #faeef3;
+
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-body: 'Source Sans 3', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  --measure: 42em;
+}
+
+
+/* Element selector + box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+/* Element selector + custom colors + typography */
+body {
+  margin: 0;
+  background: var(--white);
+  color: var(--plum);
+  font-family: var(--font-body);
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+
+a {
+  color: var(--violet);
+  text-decoration-color: var(--rose);
+  text-underline-offset: 3px;
+}
+
+
+a:hover {
+  color: var(--rose);
+}
+
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--violet);
+  outline-offset: 3px;
+}
+
+
+/* Custom typography */
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  color: var(--plum);
+  line-height: 1.15;
+  margin: 0 0 0.4em;
+}
+
+
+h1 {
+  font-size: 2.6rem;
+  font-style: italic;
+  font-weight: 500;
+}
+
+
+h2 {
+  font-size: 1.6rem;
+}
+
+
+h3 {
+  font-size: 1.25rem;
+}
+
+
+p {
+  margin: 0 0 1em;
+  max-width: var(--measure);
+}
+
+
+/* ---------- Page frame ---------- */
+
+.site-header {
+  padding: 2.5rem 1.5rem 1.5rem;
+  text-align: center;
+  border-bottom: 1px solid var(--rose-light);
+}
+
+
+.site-header .site-name {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-style: italic;
+  color: var(--plum-soft);
+  margin: 0 0 1.25rem;
+}
+
+
+main {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 3rem;
+}
+
+
+section {
+  margin-bottom: 2.75rem;
+}
+
+
+section:last-child {
+  margin-bottom: 0;
+}
+
+
+/* ---------- Navigation ---------- */
+
+nav.site-nav {
+  border-top: 1px solid var(--rose-light);
+  background: var(--rose-pale);
+  padding: 1.1rem 1.5rem;
+}
+
+
+/*
+ * Bootstrap override:
+ * This changes Bootstrap's default navbar link appearance
+ * to match my site's colors and typography.
+ */
+.site-nav .navbar-nav .nav-link {
+  color: var(--plum);
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  text-decoration: none;
+}
+
+
+.site-nav .navbar-nav .nav-link:hover,
+.site-nav .navbar-nav .nav-link.active {
+  color: var(--rose);
+}
+
+
+/* ---------- Footer ---------- */
+
+footer.site-footer {
+  text-align: center;
+  padding: 1.25rem 1.5rem 2rem;
+  background: var(--rose-pale);
+  font-size: 0.92rem;
+  color: var(--plum-soft);
+}
+
+
+footer.site-footer a {
+  color: var(--plum-soft);
+}
+
+
+footer.site-footer .linkedin-link {
+  display: inline-block;
+  margin-top: 0.35rem;
+  font-weight: 600;
+}
+
+
+/* ---------- Button-styled link ---------- */
+
+.button {
+  display: inline-block;
+  background: var(--violet);
+  color: var(--white);
+  font-family: var(--font-body);
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0.65em 1.4em;
+  border-radius: 3px;
+  border: 1px solid var(--violet);
+}
+
+
+.button:hover {
+  background: var(--rose);
+  border-color: var(--rose);
+  color: var(--white);
+}
+
+
+/* ---------- Home page ---------- */
+
+.intro {
+  align-items: start;
+}
+
+
+.intro img {
+  width: 280px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  border: 1px solid var(--rose-light);
+}
+
+
+/* ---------- Responsive layout ---------- */
+
+@media (max-width: 767px) {
+
+  .intro img {
+    width: 220px;
+    margin: 0 auto 1.5rem;
+  }
+
+  h1 {
+    font-size: 2.1rem;
+  }
+
+}
+
+/* ---------- Card grids ---------- */
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+
+/*
+ * Bootstrap override:
+ * Bootstrap already has a .card class. These rules customize
+ * Bootstrap's default card appearance for my website.
+ */
+.card {
+  background: var(--cream);
+  border: 1px solid var(--rose-light);
+  border-left: 3px solid var(--rose);
+  padding: 1.4rem 1.5rem;
+  margin: 0;
+  border-radius: 2px;
+}
+
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+
+.card h3 {
+  margin-bottom: 0.5em;
+}
+
+
+.card p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* ---------- Resume ---------- */
+
+.resume-block {
+  margin-bottom: 2rem;
+}
+
+
+.resume-block:last-child {
+  margin-bottom: 0;
+}
+
+
+.resume-entry {
+  margin-bottom: 1.2rem;
+}
+
+
+.resume-entry:last-child {
+  margin-bottom: 0;
+}
+
+
+.resume-entry-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.25rem 1rem;
+  margin-bottom: 0.2rem;
+}
+
+
+.resume-entry-head h3 {
+  margin: 0;
+}
+
+
+.resume-entry-meta {
+  font-size: 0.92rem;
+  color: var(--plum-soft);
+  font-style: italic;
+}
+
+
+.resume-entry ul {
+  margin: 0.4em 0 0;
+  padding-left: 1.2em;
+}
+
+
+.resume-entry ul li {
+  margin-bottom: 0.3em;
+}
+
+
+.skills-list {
+  padding-left: 1.2em;
+  margin: 0.5em 0 0;
+}
+
+
+.skills-list li {
+  margin-bottom: 0.45em;
+}
+
+
+hr.divider {
+  border: none;
+  border-top: 1px solid var(--rose-light);
+  margin: 2rem 0;
+}
+
+
+/* ---------- Accessibility ---------- */
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Saanvi Trivedi — Home</title>
+
+  <!-- Bootstrap stylesheet -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet">
+
+  <!-- My custom CSS -->
+  <link rel="stylesheet" href="../resources/css/styles.css">
+</head>
+
+<body>
+
+  <!-- ELEMENT EXAMPLE: <header> groups the introductory content
+       for the page. -->
+
+  <header class="site-header text-center">
+    <p class="site-name">Saanvi Trivedi</p>
+    <h1>Saanvi's Home</h1>
+  </header>
+
+
+  <!-- Bootstrap component: Navbar.
+       navbar creates the navigation component.
+       navbar-expand-md makes the navigation responsive.
+       Bootstrap annotation #1. -->
+
+  <nav class="navbar navbar-expand-md site-nav" aria-label="Primary">
+
+    <div class="container">
+
+      <ul class="navbar-nav mx-auto">
+
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="home.html">
+            Home
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="hobbies.html">
+            Hobbies
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="projects.html">
+            Projects
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="resume.html">
+            Resume
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+  </nav>
+
+
+  <!-- PARENT-CHILD RELATIONSHIP EXAMPLE: <main> is the parent
+       of the <section> element nested inside it. -->
+
+  <main>
+
+    <!-- Bootstrap annotation #2:
+         container centers the content and gives it responsive
+         horizontal spacing. -->
+
+    <div class="container">
+
+      <section aria-labelledby="intro-heading">
+
+        <h2 id="intro-heading" class="sr-only">
+          Introduction
+        </h2>
+
+
+        <!-- Bootstrap annotation #3:
+             row creates a Bootstrap responsive grid row. -->
+
+        <div class="row align-items-start g-4 intro">
+
+          <!-- col-md-4 makes this column take 4/12 of the row
+               on medium and larger screens. -->
+
+         <div class="col-md-5">
+
+            <!-- ATTRIBUTE EXAMPLE: The alt attribute gives
+                 assistive technology a description of the image. -->
+
+            <img
+              src="../resources/img/me.jpeg"
+              class="img-fluid rounded"
+              alt="My photo">
+
+          </div>
+
+          <!-- col-md-7 makes this column take 7/12 of the row
+               on medium and larger screens. -->
+
+          <div class="col-md-7">
+
+            <p>
+              Hi, I'm Saanvi and I'm a sophomore Computer Science student with a
+              business minor at the University of Colorado Boulder and a writer
+              working on a literary novel. I love reading, hiking, music, coding,
+              and writing. My biggest interests are in tech and entrepreneurship,
+              and I'm excited to continue my journey in CS!
+            </p>
+
+            <p>Here's what I spend most of my time on:</p>
+
+            <ul class="interest-list">
+              <li>Studying computer science and building small projects</li>
+              <li>Working on my creative writing</li>
+              <li>Reading — mostly classics and mysteries</li>
+            </ul>
+
+            <p>
+              Take a look at my
+              <a href="hobbies.html">hobbies</a>,
+              <a href="projects.html">projects</a>, or
+              <a href="resume.html" class="button">View My Resume</a>
+            </p>
+
+          </div>
+
+        </div>
+
+      </section>
+
+    </div>
+
+  </main>
+
+
+  <footer class="site-footer text-center">
+
+    <p>&copy; 2026 Saanvi Trivedi</p>
+
+    <a
+      class="linkedin-link"
+      href="https://www.linkedin.com/in/saanvitrivedi/"
+      target="_blank"
+      rel="noopener">
+      Connect with me on LinkedIn
+    </a>
+
+  </footer>
+
+</body>
+</html>

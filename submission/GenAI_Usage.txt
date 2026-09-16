@@ -1,0 +1,137 @@
+GENAI USAGE
+
+1. The AI Tool
+
+AI tool: ChatGPT
+Variant: GPT-5.6 Luna
+
+
+2. My Prompt
+
+I am working on a CSCI 3308 personal website lab. I already created the
+HTML content for four pages: Home, Hobbies, Projects, and Resume.
+
+I will add and edit my own content, images, and personal information.
+
+For this task, help me add Bootstrap to my existing website. I specifically
+need a consistent Bootstrap navigation bar, a Bootstrap container, responsive
+rows and columns, and Bootstrap components such as cards.
+
+Please only give me code that I can inspect and explain. Do not redesign the
+entire website or invent additional sections.
+
+
+3. The AI's Suggestion
+
+The AI suggested adding the Bootstrap stylesheet to each HTML page and
+replacing the original navigation with a Bootstrap navbar.
+
+For example, it suggested using:
+
+<nav class="navbar navbar-expand-md site-nav" aria-label="Primary">
+
+  <div class="container">
+
+    <ul class="navbar-nav mx-auto">
+
+      <li class="nav-item">
+        <a class="nav-link" href="home.html">Home</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="hobbies.html">Hobbies</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="projects.html">Projects</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="resume.html">Resume</a>
+      </li>
+
+    </ul>
+
+  </div>
+</nav>
+
+The AI also suggested using Bootstrap's container, row, and column classes.
+For example, on the Home page the image and introduction were placed into
+Bootstrap columns:
+
+<div class="row align-items-start g-4">
+
+  <div class="col-md-5">
+    <img
+      src="../resources/img/me.jpeg"
+      class="img-fluid rounded"
+      alt="My photo">
+  </div>
+
+  <div class="col-md-7">
+    <!-- introduction -->
+  </div>
+
+</div>
+
+
+4. My Evaluation
+
+What did the AI produce correctly?
+
+The AI correctly showed me how to connect Bootstrap to my existing HTML
+pages using the Bootstrap stylesheet. It also correctly showed how Bootstrap
+container, row, and column classes can create a responsive layout. The
+Bootstrap card component was also useful for organizing the hobby and
+project content.
+
+What part did I need to change?
+
+I needed to change the image layout because the original Bootstrap column
+made my personal photo appear too small. I changed the Home page columns
+from the original layout and added custom CSS to give the image a larger
+width while keeping the layout responsive.
+
+I also customized Bootstrap's default navigation and card styling in my
+own styles.css so that the Bootstrap components matched the rest of my
+website.
+
+How did I verify that the code worked?
+
+I opened the website using my local development server and checked each of
+the four HTML pages. I verified that the navigation links connected the
+pages correctly, that the cards displayed correctly, and that the layout
+changed when the browser window was made smaller.
+
+I also checked the website in VS Code's preview and in the browser.
+
+
+One line of generated code explained in my own words:
+
+<div class="col-md-5">
+
+The class "col-md-5" is a Bootstrap grid class. Bootstrap divides a row
+into 12 columns. This element uses 5 of those 12 columns on medium-sized
+screens and larger screens. On smaller screens, Bootstrap allows the
+columns to stack instead of staying side by side.
+
+
+5. My Revision
+
+I made a meaningful revision to the AI-generated layout by changing the
+Home page image and text columns from the original Bootstrap proportions.
+I changed the image column to col-md-5 and the text column to col-md-7
+because the original image was too small.
+
+I also added custom CSS to give my personal image a larger width while
+keeping it responsive:
+
+.intro img {
+  width: 280px;
+  max-width: 100%;
+  height: auto;
+}
+
+This was a meaningful change because it changed the responsive layout and
+fixed an actual visual problem rather than only changing text, colors, or
+variable names.
